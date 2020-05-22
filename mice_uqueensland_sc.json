@@ -45,7 +45,7 @@
                         "wspace": 0.04,
                         "hspace": 0.04
                         },
-                "CenterCrop2D": {
+                "CenterCrop": {
                         "size": [96, 96]
                 },
                 "ElasticTransform": {
@@ -58,30 +58,30 @@
                         "translate": [0.03, 0.03],
                         "scale": [0.98, 1.02]
                         },
-                "ToTensor": {},
-                "NormalizeInstance": {}
+                "NumpyToTensor": {},
+                "NormalizeInstance": {"applied_to": ["im"]}
                 },
         "transformation_validation": {
                 "Resample": {
                         "wspace": 0.04,
                         "hspace": 0.04
                         },
-                "CenterCrop2D": {
+                "CenterCrop": {
                         "size": [96, 96]
                 },
-                "ToTensor": {},
-                "NormalizeInstance": {}
+                "NumpyToTensor": {},
+                "NormalizeInstance": {"applied_to": ["im"]}
                 },
         "transformation_testing": {
                 "Resample": {
                         "wspace": 0.04,
                         "hspace": 0.04
                         },
-                "CenterCrop2D": {
+                "CenterCrop": {
                         "size": [96, 96]
                 },
-                "ToTensor": {},
-                "NormalizeInstance": {}
+                "NumpyToTensor": {},
+                "NormalizeInstance": {"applied_to": ["im"]}
                 },
         "debugging": true
 }
